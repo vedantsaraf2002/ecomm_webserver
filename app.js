@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload')
 
-//for swagger documentation
+//for swagger documentation  
 const swaggerUi = require("swagger-ui-express");
 const YAML = require("yamljs");
 const swaggerDocument = YAML.load("./swagger.yaml");
@@ -22,7 +22,7 @@ app.use(fileUpload({
     tempFileDir: "/tmp/"
 }));
 
-//temp check
+//temp checking
 app.set("view engine", "ejs");
 
 
